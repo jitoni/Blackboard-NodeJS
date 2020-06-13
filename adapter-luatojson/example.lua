@@ -22,7 +22,18 @@ ArchLootDB = {
                     "Manual Entry" -- [3]
                 } -- [2]
             },
-            ["Valanya"] = {}
+            ["Valanya"] = {
+                {
+                    "|cffffffff|hitem:37704:0:0:0:0:0:0:0:80|h[crystallized", -- [1]
+                    "10-06-20", -- [2]
+                    "Test 2" -- [3]
+                }, -- [1]
+                {
+                    "|cff0070dd|hitem:40016:0:0:0:0:0:0:0:80|h[mystic", -- [1]
+                    "10-06-20", -- [2]
+                    "Manual Entry" -- [3]
+                } -- [2]
+            }
         }
     }
 }

@@ -15,5 +15,11 @@ read = read
     .replace(/\{\{/g,'[[')                                  //:: change double curlies to square brackets
     .replace(/\}\,\{/g,'],[')                               //:: replace curly bracket set with square brackets
     .replace(/\}\}\,/g,']],')
+    .replace(/\}\}\,/g,']],')
+    .replace(/\}\}\}/g,']]}')
+    .replace(/^(.*?)(?<=\},"global"\s:)/, '')  
+    .replace(/\}$/, '')             //:: Variable declaration sil
+
+// },"global" : 
 
 fs.writeFileSync('output.json', read)
